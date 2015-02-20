@@ -1,10 +1,11 @@
 package com.eurekainfosoluciones.wearcom;
 
 import com.eurekainfosoluciones.wearcom.model.DataRequest;
-import com.google.android.gms.wearable.PutDataRequest;
+import com.eurekainfosoluciones.wearcom.model.MessageRequest;
 
-public interface PutDataRequester {
+public interface RequestSender {
 
+    void sendMessage(MessageRequest message);
     void putData(DataRequest request);
 
 }
